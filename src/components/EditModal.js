@@ -6,6 +6,7 @@ import { AppContext, useAppContext } from "../context/context";
 
 const EditModal = ({ show, onClose, rowData }) => {
   const { name, age } = rowData;
+
   const { updateStudent } = useAppContext(AppContext);
   const [formData, setFormData] = useState({
     id: "",
@@ -33,6 +34,7 @@ const EditModal = ({ show, onClose, rowData }) => {
   return (
     <>
       <form>
+        {" "}
         <Modal show={show} onHide={onClose}>
           <Modal.Header closeButton>
             <Modal.Title>Update Student</Modal.Title>

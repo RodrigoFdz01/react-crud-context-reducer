@@ -18,8 +18,8 @@ const Show = () => {
       <table className="table table-striped mt-5">
         <thead>
           <tr>
-            <th>name</th>
-            <th>AGE</th>
+            <th>Name</th>
+            <th>Age</th>
             <th>Actions</th>
           </tr>
         </thead>

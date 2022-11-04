@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import { AppContext, useAppContext } from "../context/context";
 
 const Create = () => {
-  const { creaStudent } = useAppContext(AppContext);
+  const { createStudent } = useAppContext(AppContext);
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(name + age);
-    creaStudent({ id: Date.now(), name, age });
+    // createStudent({ id: Date.now(), name, age });
+    createStudent({ id: Date.now(), name, age });
     setAge("");
     setName("");
   };

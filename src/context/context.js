@@ -7,7 +7,7 @@ const initialSate = {
   students: [
     { id: 1, name: "Juan", age: 20 },
     { id: 2, name: "Toto", age: 21 },
-    { id: 3, name: "Moto", age: 22 },
+    { id: 3, name: "Cholo", age: 22 },
   ],
 };
 
@@ -20,8 +20,7 @@ export const AppProvider = (props) => {
     dispatch({ type: CREATE, payload: student });
   const updateStudent = (student) =>
     dispatch({ type: UPDATE, payload: student });
-  const deleteStudent = (id) =>
-    dispatch({ type: DELETE, payload: "delete from context" });
+  const deleteStudent = (id) => dispatch({ type: DELETE, payload: id });
 
   return (
     <AppContext.Provider
